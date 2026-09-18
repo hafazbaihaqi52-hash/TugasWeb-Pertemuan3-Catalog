@@ -1,0 +1,80 @@
+:root {
+    --warna-utama: #0d6efd;
+    --warna-gelap: #212529;
+    --warna-latar: #f8f9fa;
+    --warna-teks: #212529;
+    --jarak: 24px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+}
+
+
+.display-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+}
+
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.harga {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+footer {
+    margin-top: 0;
+}
+
+
+@media (max-width: 767.98px) {
+
+    .card-img-top {
+        height: 200px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .card-img-top {
+        height: 220px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .card-img-top {
+        height: 240px;
+    }
+
+}
